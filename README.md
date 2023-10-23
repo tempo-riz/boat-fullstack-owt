@@ -34,12 +34,3 @@ appropriate validation:
 ### Security aspects. (optional)
 
 Authentication / Authorization (only authenticated user can access to the resources )
-
-# Usage
-
-## Start the backend
-.\gradlew.bat bootRun
-
-## Start the frontend
-npm start
-
