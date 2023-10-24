@@ -1,12 +1,13 @@
 # boat-fullstack-owt
 
-A simple app, where a user can get a quick overview over list of boats
+A web application that enables users to efficiently manage and track boat records, allowing for the creation, retrieval, updating, and deletion of boat information.
+
 
 # Technology Stack
-- [React](https://github.com/facebook/create-react-app)
-- [Java Spring Boot](https://spring.io/projects/spring-boot)
+- Frontend: [React](https://github.com/facebook/create-react-app) with [Material UI](https://material-ui.com/)
+- Backend: [Java Spring Boot](https://spring.io/projects/spring-boot) with [H2 Database](https://www.h2database.com/html/main.html)
 
-# Use Case
+# Frontend - Use Cases
 
 ### UC1
 
@@ -23,14 +24,31 @@ A simple app, where a user can get a quick overview over list of boats
 ### UC4
 - The user clicks on a boat item and gets a detail view over it.
 
-# Backend
-### CRUD endpoint for managing boats. 
-A boat should have at least the following attributes and
-appropriate validation:
+# Backend - CRUD Endpoints
 
-- Name
-- Description
+- **GET /boats**: Retrieve a list of all boats.
+- **GET /boats/{id}**: Retrieve a specific boat by ID.
+- **POST /boats**: Create a new boat.
+  - **Request Body**: JSON representation of the Boat object to be created.
+- **PUT /boats/{id}**: Update an existing boat.
+  - **Request Body**: JSON representation of the Boat object with updated information.
+- **DELETE /boats/{id}**: Delete a boat.
 
-### Security aspects. (optional)
+## Data Model
+
+- `id` (Long, auto-generated): Unique identifier for the boat.
+- `name` (String): The name of the boat.
+- `description` (String): The description of the boat.
+
+## Response Codes
+
+- 200 OK: Successful request.
+- 201 Created: Boat created.
+- 204 No Content: Boat deleted.
+- 400 Bad Request: Invalid request data.
+- 404 Not Found: Boat not found.
+
+
+### Security aspects. (optional- todo)
 
 Authentication / Authorization (only authenticated user can access to the resources )
