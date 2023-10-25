@@ -9,19 +9,8 @@ A web application that enables users to efficiently manage and track boat record
 
 # Frontend - Use Cases
 
-### UC1
-
-- The user opens your app and gets a login screen. 
-- He has to login. 
-- After a successful login he is navigated to the overview page (UC2).
-
-### UC2
 - The user has a list of all boat resources
-
-### UC3
 - The user can add or update or delete boat
-
-### UC4
 - The user clicks on a boat item and gets a detail view over it.
 
 # Backend - CRUD Endpoints
@@ -47,8 +36,3 @@ A web application that enables users to efficiently manage and track boat record
 - 204 No Content: Boat deleted.
 - 400 Bad Request: Invalid request data.
 - 404 Not Found: Boat not found.
-
-
-### Security aspects. (optional- todo)
-
-Authentication / Authorization (only authenticated user can access to the resources )
