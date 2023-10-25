@@ -2,6 +2,10 @@
 
 A web application that enables users to efficiently manage and track boat records, allowing for the creation, retrieval, updating, and deletion of boat information.
 
+# Usage
+1. start the API using java extension : entrypoint in ```back/src/main/java/com/back/boat/BoatApplication.java``` 
+2. install the frontend dependencies : ```npm i``` in front/
+3. start the frontend : ```npm start``` app should start at http://localhost:3000/
 
 # Technology Stack
 - Frontend: [React](https://github.com/facebook/create-react-app) with [Material UI](https://material-ui.com/)
